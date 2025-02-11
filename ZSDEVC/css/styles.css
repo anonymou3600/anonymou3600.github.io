@@ -1,0 +1,89 @@
+html {
+    background-color: lightgrey;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color : lightgrey;
+    margin: auto;
+    width: 90%;
+    min-width: 1200px;
+    max-width: 2000px;
+    height: 100%;
+    padding: 0;
+}
+
+a {
+    color: white; 
+}
+
+#text1{
+    z-index:100;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+}
+
+#intro{
+    z-index:100;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    background:  rgb(22, 67, 35);
+	background-size: cover;
+    height: auto;
+    padding: 2%;
+}
+
+.content-container{
+    background-color: white;
+	padding: 40px 40px;
+	text-align: left;
+	font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.content-title{
+    font-size: 30px;
+    color: rgb(22, 67, 35);
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding: 1%;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 13px;
+}
+
+audio {
+    width: 100px;
+}
