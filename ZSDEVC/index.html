@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Any-to-Any-EVC</title>
-    <link rel="stylesheet" type="text/css" href="https://henrychou36.github.io/Any-to-Any-EVC/css/styles.css">
+    <title>ZSDEVC</title>
+    <link rel="stylesheet" type="text/css" href="https://anonymou3600.github.io/ZSDEVC/css/styles.css">
 </head>
 <body>
 	<div class="container"">
-		<div id="text1"><br>Any-to-Any-EVC</br></div>
+		<div id="text1"><br>ZSDEVC: Zero-Shot Diffusion-based Emotional Voice Conversion with
+            Disentangled Mechanism</br></div>
 			<div id="intro">
 				<p><font size=6>
 					Hsing-Hang Chou<sup>1</sup>, Yun-Shao Lin<sup>1</sup>, 
@@ -28,7 +29,7 @@
 
 	<div class="content-container">
 		<p><font size=5>Abstract</font></p>
-		<p>Emotional Voice Conversion (EVC) aims to modify the emotional expression of speech for various applications, such as human-machine interaction. Previous deep learning-based approaches using generative adversarial networks and autoencoder models have shown promise but suffer from quality degradation and limited emotion control. To address these issues, a novel diffusion-based EVC framework with disentangled loss and expressive guidance is proposed. Our method separates speaker and emotional features to maintain speech quality while enhancing emotional expressiveness. Tested on real-world and acted-out datasets, the approach achieved significant improvements in emotion classification accuracy for both in-the-wild and act-out datasets and showed reduced distortion compared to state-of-the-art models.</p>
+		<p>The human voice conveys not just words but also emotional states and individuality. Emotional voice conversion (EVC) modifies emotional expressions while preserving linguistic content and speaker identity, improving applications like human-machine interaction. While deep learning has advanced EVC models for specific target speakers on well-crafted emotional datasets, existing methods often face issues with emotion accuracy and speech distortion. In addition, the zero-shot scenario, in which emotion conversion is applied to unseen speakers, remains underexplored. This work introduces a novel diffusion framework with disentangled mechanisms and expressive guidance, trained on a large emotional speech dataset and evaluated on unseen speakers across in-domain and out-of-domain datasets. Experimental results show that our method produces expressive speech with high emotional accuracy, naturalness, and quality, showcasing its potential for broader EVC applications.</p>
 	</div>
 
 	<div class="content-container">
@@ -36,12 +37,12 @@
 		<div class="content-title"> Neutral to Angry </div>
 		<table  border="1">
 			<tr>
-				<th>Neutral</th>
-				<th>CycleGAN-EVC</th>
+				<th>Source</th>
 				<th>StarGAN-EVC</th>
 				<th>Seq2Seq-EVC</th>
 				<th>Emovox</th>
 				<th>Prosody2Vec</th>
+                <th>EMOCONV-DIFF</th>
 				<th>Ours</th>
 				<th>Target</th>
 				<th>Reference</th>
@@ -49,131 +50,131 @@
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2a_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2a_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2a_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2a_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2a_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2a_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2a_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2a_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2a_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2a_1.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2a_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2a_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2a_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2a_1.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2a_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2a_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td rowspan="3">
 					<audio controls style="width: 100px;height: 50px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/angry.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/angry.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2a_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2a_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2a_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2a_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2a_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2a_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2a_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2a_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2a_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2a_2.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2a_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2a_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2a_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2a_2.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2a_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2a_2.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2a_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2a_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2a_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2a_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2a_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2a_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2a_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2a_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2a_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2a_3.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2a_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2a_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2a_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2a_3.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2a_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2a_3.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>			
@@ -182,12 +183,12 @@
 		<div class="content-title"> Neutral to Happy </div>
 		<table  border="1">
 			<tr>
-				<th>Neutral</th>
-				<th>CycleGAN-EVC</th>
+				<th>Source</th>
 				<th>StarGAN-EVC</th>
 				<th>Seq2Seq-EVC</th>
 				<th>Emovox</th>
 				<th>Prosody2Vec</th>
+                <th>EMOCONV-DIFF</th>
 				<th>Ours</th>
 				<th>Target</th>
 				<th>Reference</th>
@@ -195,131 +196,131 @@
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2h_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2h_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2h_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2h_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2h_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2h_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2h_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2h_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2h_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2h_1.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV-DIFF_n2h_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2h_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2h_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2h_1.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2h_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2h_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td rowspan="3">
 					<audio controls style="width: 100px;height: 50px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/happy.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/happy.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2h_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2h_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2h_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2h_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2h_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2h_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2h_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2h_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2h_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2h_2.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2h_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2h_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2h_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2h_2.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2h_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2h_2.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2h_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2h_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2h_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2h_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2h_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2h_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2h_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2h_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2h_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2h_3.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2h_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2h_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2h_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2h_3.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2h_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2h_3.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>			
@@ -328,12 +329,12 @@
 		<div class="content-title"> Neutral to Sad </div>
 		<table  border="1">
 			<tr>
-				<th>Neutral</th>
-				<th>CycleGAN-EVC</th>
+				<th>Source</th>
 				<th>StarGAN-EVC</th>
 				<th>Seq2Seq-EVC</th>
 				<th>Emovox</th>
 				<th>Prosody2Vec</th>
+                <th>EMOCONV-DIFF</th>
 				<th>Ours</th>
 				<th>Target</th>
 				<th>Reference</th>
@@ -341,131 +342,131 @@
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2s_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2s_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2s_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2s_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2s_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2s_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2s_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2s_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2s_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2s_1.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2s_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2s_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2s_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2s_1.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2s_1.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2s_1.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td rowspan="3">
 					<audio controls style="width: 100px;height: 50px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/sad.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/sad.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2s_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2s_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2s_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2s_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2s_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2s_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2s_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2s_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2s_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2s_2.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2s_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2s_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2s_2.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2s_2.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2s_2.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2s_2.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Source_n2s_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Source_n2s_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/CycleGAN_EVC_n2s_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/StarGAN_EVC_n2s_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/StarGAN_EVC_n2s_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Seq2Seq_EVC_n2s_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Seq2Seq_EVC_n2s_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Emovox_n2s_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Emovox_n2s_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Prosody2Vec_n2s_3.wav" type="audio/wav">
+					</audio>
+				</td>
+                <td>
+					<audio controls style="width: 100px;">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/EMOCONV_DIFF_n2s_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Prosody2Vec_n2s_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Ours_n2s_3.wav" type="audio/wav">
 					</audio>
 				</td>
 				<td>
 					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Ours_n2s_3.wav" type="audio/wav">
-					</audio>
-				</td>
-				<td>
-					<audio controls style="width: 100px;">
-						<source src="https://henrychou36.github.io/Any-to-Any-EVC/audio/Golden_n2s_3.wav" type="audio/wav">
+						<source src="https://anonymou3600.github.io/ZSDEVC/audio/Golden_n2s_3.wav" type="audio/wav">
 					</audio>
 				</td>
 			</tr>			
